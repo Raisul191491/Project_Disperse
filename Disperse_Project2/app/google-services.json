@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "311980060029",
+    "project_id": "disperse-7a209",
+    "storage_bucket": "disperse-7a209.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311980060029:android:714c213af68534d1ebf014",
+        "android_client_info": {
+          "package_name": "com.company.Disperse_project01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311980060029-4fvon2avta4dcljjpedor2ifr000rdit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANvXOnBbNgqwNyP1Z9I5J4DqMrgsS0sOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311980060029-4fvon2avta4dcljjpedor2ifr000rdit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311980060029:android:1a746e12a76ab34bebf014",
+        "android_client_info": {
+          "package_name": "com.example.disperse_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311980060029-4fvon2avta4dcljjpedor2ifr000rdit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANvXOnBbNgqwNyP1Z9I5J4DqMrgsS0sOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311980060029-4fvon2avta4dcljjpedor2ifr000rdit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
