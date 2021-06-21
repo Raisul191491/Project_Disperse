@@ -16,7 +16,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.033"
-        app:srcCompat="@drawable/front_logo" />
+        app:srcCompat="@drawable/front_logo"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/Register"
@@ -26,6 +27,7 @@
         android:fontFamily="@font/artifika"
         android:text="Create new account"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,4 +35,109 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Full_name"
+        android:layout_width="344dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#B6B3B3"
+        android:ems="10"
+        android:fontFamily="@font/artifika"
+        android:inputType="textPersonName"
+        android:text="  Full Name"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHint="#751212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="346dp"
+        android:layout_height="44dp"
+        android:background="#B6B3B3"
+        android:ems="10"
+        android:fontFamily="@font/artifika"
+        android:inputType="textPersonName"
+        android:padding="10sp"
+        android:text="Email"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHint="#751212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Full_name"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <EditText
+        android:id="@+id/Password_reg"
+        android:layout_width="346dp"
+        android:layout_height="44dp"
+        android:background="#B6B3B3"
+        android:ems="10"
+        android:fontFamily="@font/artifika"
+        android:inputType="text"
+        android:text="  Password"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHint="#751212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="346dp"
+        android:layout_height="44dp"
+        android:background="#B6B3B3"
+        android:ems="10"
+        android:fontFamily="@font/artifika"
+        android:inputType="textPersonName"
+        android:text="  Phone No."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHint="#751212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_reg"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <ImageButton
+        android:id="@+id/submit_button"
+        android:layout_width="103dp"
+        android:layout_height="55dp"
+        android:rotationY="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number"
+        app:layout_constraintVertical_bias="0.329"
+        app:srcCompat="@drawable/submit_logo" />
+
+    <TextView
+        android:id="@+id/Send_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Already Registered? Login Here"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_button"
+        app:layout_constraintVertical_bias="0.19" />
 </androidx.constraintlayout.widget.ConstraintLayout>

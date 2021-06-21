@@ -4,6 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="259dp"
+        android:layout_height="247dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/front_logo"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="220dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/artifika"
+        android:text="Log-in"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="346dp"
+        android:layout_height="44dp"
+        android:background="#B6B3B3"
+        android:ems="10"
+        android:fontFamily="@font/artifika"
+        android:inputType="textPersonName"
+        android:padding="10sp"
+        android:text="Email"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHint="#751212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <EditText
+        android:id="@+id/Password_reg"
+        android:layout_width="346dp"
+        android:layout_height="44dp"
+        android:background="#B6B3B3"
+        android:ems="10"
+        android:fontFamily="@font/artifika"
+        android:inputType="text"
+        android:text="  Password"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHint="#751212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.081" />
+
+
+    <ImageButton
+        android:id="@+id/submit_button"
+        android:layout_width="103dp"
+        android:layout_height="55dp"
+        android:rotationY="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_reg"
+        app:layout_constraintVertical_bias="0.792"
+        app:srcCompat="@drawable/submit_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
