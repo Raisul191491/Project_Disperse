@@ -109,23 +109,6 @@
         android:textColor="#0D1543"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="92dp"
-        android:layout_height="83dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="313dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="623dp"
-        android:background="#00FFFFFF"
-        android:onClick="logout"
-        android:visibility="visible"
-        app:srcCompat="@drawable/logout_logo" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="208dp"
@@ -139,5 +122,21 @@
         android:layout_marginEnd="103dp"
         android:layout_marginBottom="453dp"
         app:srcCompat="@drawable/front_logo" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="629dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/logout_logo"
+        android:onClick="logout"/>
 
 </RelativeLayout>
