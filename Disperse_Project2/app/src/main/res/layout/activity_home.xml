@@ -8,21 +8,6 @@
     tools:context=".HomeActivity">
 
 
-    <ImageView
-        android:id="@+id/mini_button"
-        android:layout_width="wrap_content"
-        android:layout_height="122dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="130dp"
-        android:layout_marginBottom="505dp"
-        android:contentDescription="@string/mini_logo"
-        app:srcCompat="@drawable/mini_logo" />
-
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="65dp"
@@ -71,19 +56,21 @@
         app:srcCompat="@drawable/help_logo" />
 
     <TextView
-        android:id="@+id/help_name"
-        android:layout_width="93dp"
+        android:id="@+id/form_name"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/help_button"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/form_logo"
+        android:layout_alignEnd="@+id/form_logo"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="283dp"
-        android:layout_marginTop="275dp"
-        android:layout_marginEnd="-12dp"
-        android:layout_marginBottom="437dp"
-        android:text="@string/help"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="382dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="330dp"
+        android:fontFamily="@font/artifika"
+        android:text="@string/form"
         android:textAlignment="center"
+        android:textColor="#0D1543"
         android:textStyle="bold" />
 
     <TextView
@@ -94,43 +81,63 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="275dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="437dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="381dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="331dp"
+        android:fontFamily="@font/artifika"
         android:text="@string/search"
         android:textAlignment="center"
+        android:textColor="#0D1543"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/form_name"
-        android:layout_width="wrap_content"
+        android:id="@+id/help_name"
+        android:layout_width="93dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/form_logo"
-        android:layout_alignEnd="@+id/form_logo"
+        android:layout_alignEnd="@+id/help_button"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginTop="275dp"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginBottom="437dp"
-        android:text="@string/form"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="382dp"
+        android:layout_marginEnd="-14dp"
+        android:layout_marginBottom="330dp"
+        android:fontFamily="@font/artifika"
+        android:text="@string/help"
         android:textAlignment="center"
+        android:textColor="#0D1543"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="37dp"
-        android:layout_height="34dp"
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="338dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="659dp"
-        app:srcCompat="@drawable/logout_logo"
-        android:onClick="logout"/>
+        android:layout_marginStart="313dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="623dp"
+        android:background="#00FFFFFF"
+        android:onClick="logout"
+        android:visibility="visible"
+        app:srcCompat="@drawable/logout_logo" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="208dp"
+        android:layout_height="229dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="453dp"
+        app:srcCompat="@drawable/front_logo" />
 
 </RelativeLayout>
