@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Disperse</string>
+    <string name="disperse_tutoring">Disperse Tutoring</string>
+    <string name="form">Form</string>
+    <string name="search">Search</string>
+    <string name="help">Help</string>
+    <string name="takes_data">takes data</string>
+    <string name="searches_data">searches data</string>
+    <string name="helps">helps</string>
+    <string name="mini_logo">mini logo</string>
+</resources>
