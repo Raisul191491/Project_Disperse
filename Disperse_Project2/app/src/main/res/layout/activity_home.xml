@@ -8,107 +8,6 @@
     tools:context=".HomeActivity">
 
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="65dp"
-        android:layout_height="63dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="294dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="373dp"
-        android:background="#00CCDAE4"
-        app:srcCompat="@drawable/search_logo" />
-
-    <ImageButton
-        android:id="@+id/form_logo"
-        android:layout_width="67dp"
-        android:layout_height="74dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="286dp"
-        android:layout_marginEnd="302dp"
-        android:layout_marginBottom="370dp"
-        android:background="#00CCDAE4"
-        android:contentDescription="@string/takes_data"
-        app:srcCompat="@drawable/form" />
-
-    <ImageButton
-        android:id="@+id/help_button"
-        android:layout_width="71dp"
-        android:layout_height="65dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="296dp"
-        android:layout_marginTop="293dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="371dp"
-        android:background="#00CCDAE4"
-        android:contentDescription="@string/helps"
-        app:srcCompat="@drawable/help_logo" />
-
-    <TextView
-        android:id="@+id/form_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/form_logo"
-        android:layout_alignEnd="@+id/form_logo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-5dp"
-        android:layout_marginTop="382dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="330dp"
-        android:fontFamily="@font/artifika"
-        android:text="@string/form"
-        android:textAlignment="center"
-        android:textColor="#0D1543"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/Search_name"
-        android:layout_width="95dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="381dp"
-        android:layout_marginEnd="155dp"
-        android:layout_marginBottom="331dp"
-        android:fontFamily="@font/artifika"
-        android:text="@string/search"
-        android:textAlignment="center"
-        android:textColor="#0D1543"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/help_name"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/help_button"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="285dp"
-        android:layout_marginTop="382dp"
-        android:layout_marginEnd="-14dp"
-        android:layout_marginBottom="330dp"
-        android:fontFamily="@font/artifika"
-        android:text="@string/help"
-        android:textAlignment="center"
-        android:textColor="#0D1543"
-        android:textStyle="bold" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="208dp"
@@ -136,7 +35,128 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="629dp"
         android:background="#00FFFFFF"
-        app:srcCompat="@drawable/logout_logo"
-        android:onClick="logout"/>
+        android:onClick="logout"
+        app:srcCompat="@drawable/logout_logo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="340dp"
+        app:cardBackgroundColor="#DFE3E8"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/form"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/form_fill" />
+
+        <TextView
+            android:layout_width="98dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center|left"
+            android:layout_margin="40dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="Teacher request"
+            android:textAlignment="center"
+            android:textColor="#2962FF"
+            android:textSize="18dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="219dp"
+        app:cardBackgroundColor="#DFE3E8"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/help" />
+
+        <TextView
+            android:layout_width="98dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center|left"
+            android:layout_margin="40dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="Assistance and FAQ"
+            android:textAlignment="center"
+            android:textColor="#2962FF"
+            android:textSize="18dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="96dp"
+        app:cardBackgroundColor="#DFE3E8"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/search" />
+
+        <TextView
+            android:layout_width="98dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center|left"
+            android:layout_margin="40dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="Tuition Search"
+            android:textAlignment="center"
+            android:textColor="#2962FF"
+            android:textSize="18dp" />
+
+    </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>
