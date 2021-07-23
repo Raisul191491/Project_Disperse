@@ -29,6 +29,8 @@ import java.util.Map;
 
 import io.perfmark.Tag;
 
+import static android.content.ContentValues.TAG;
+
 public class Register extends AppCompatActivity {
 
     EditText mFullName, mEmail, mPassword, mPhone;
