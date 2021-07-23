@@ -39,16 +39,16 @@
         app:srcCompat="@drawable/logout_logo" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="277dp"
+        android:layout_height="95dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="340dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="368dp"
         app:cardBackgroundColor="#DFE3E8"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
@@ -79,16 +79,16 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="279dp"
+        android:layout_height="94dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="58dp"
+        android:layout_marginStart="67dp"
         android:layout_marginTop="391dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="219dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="246dp"
         app:cardBackgroundColor="#DFE3E8"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
@@ -119,16 +119,16 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="277dp"
+        android:layout_height="92dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="58dp"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="513dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="126dp"
         app:cardBackgroundColor="#DFE3E8"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
@@ -157,6 +157,20 @@
             android:textSize="18dp" />
 
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="634dp"
+        app:srcCompat="@drawable/profile_logo" />
 
 
 </RelativeLayout>
