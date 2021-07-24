@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Disperse_Project">
-        <activity android:name=".profilepage"></activity>
+        <activity android:name=".proflle_page"></activity>
         <activity android:name=".login" />
         <activity android:name=".Register" />
         <activity android:name=".HomeActivity" />
