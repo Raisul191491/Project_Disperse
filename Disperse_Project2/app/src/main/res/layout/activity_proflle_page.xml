@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                android:drawableLeft="@android:drawable/ic_menu_call"
                 android:drawablePadding="10dp"
                 android:text="Phone no.">
 
