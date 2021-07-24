@@ -154,12 +154,13 @@
             android:text="Tuition Search"
             android:textAlignment="center"
             android:textColor="#2962FF"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:onClick="setProfile"/>
 
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/profile"
         android:layout_width="62dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
