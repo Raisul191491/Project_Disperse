@@ -23,14 +23,12 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), proflle_page.class));
-                finish();
             }
         });
     }
     public void logout(View view){
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(getApplicationContext(), login.class));
-        finish();
     }
 
 

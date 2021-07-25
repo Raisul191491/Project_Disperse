@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/institute"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".proflle_page">
@@ -34,7 +35,7 @@
                 android:layout_margin="20dp"
                 android:layout_toRightOf="@+id/profile_image"
                 android:fontFamily="sans-serif-black"
-                android:text="name"
+                android:text="Raisul Islam"
                 android:textSize="20sp" />
 
         </RelativeLayout>
@@ -46,77 +47,58 @@
             android:padding="20dp">
 
 
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/namefull"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp">
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                android:drawablePadding="10dp"
+                android:text="Full name"
+                android:textColor="#000000"
+                android:textSize="16sp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
-                    android:drawableLeft="@android:drawable/ic_menu_my_calendar"
-                    android:drawablePadding="10dp"
-                    android:text="Full name">
-
-                </com.google.android.material.textfield.TextInputEditText>
+            </EditText>
 
 
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/email_"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp">
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="10dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="16sp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
-                    android:drawableLeft="@android:drawable/ic_dialog_email"
-                    android:drawablePadding="10dp"
-                    android:text="Email">
-
-                </com.google.android.material.textfield.TextInputEditText>
+            </EditText>
 
 
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp">
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@android:drawable/ic_dialog_map"
+                android:drawablePadding="10dp"
+                android:text="Institute"
+                android:textColor="#000000"
+                android:textSize="16sp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
-                    android:drawableLeft="@android:drawable/ic_dialog_map"
-                    android:drawablePadding="10dp"
-                    android:text="Institute">
+            </EditText>
 
-                </com.google.android.material.textfield.TextInputEditText>
-
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/phonenumber"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp">
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="10dp"
+                android:text="Phone no."
+                android:textColor="#000000"
+                android:textSize="16sp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
-                    android:drawableLeft="@android:drawable/ic_menu_call"
-                    android:drawablePadding="10dp"
-                    android:text="Phone no.">
-
-                </com.google.android.material.textfield.TextInputEditText>
-
-
-            </com.google.android.material.textfield.TextInputLayout>
+            </EditText>
 
             <Button
                 android:layout_width="match_parent"
