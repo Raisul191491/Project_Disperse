@@ -1,25 +1,25 @@
 package com.example.disperse_project;
 
 public class reqs {
-    String fSubject, fClass, fSalary, fDay, fLocation;
+    String subject, classes, days, salary, location;
 
-    public String getfSubject() {
-        return fSubject;
+    public String getClasses() {
+        return classes;
     }
 
-    public String getfClass() {
-        return fClass;
+    public String getDays() {
+        return days;
     }
 
-    public String getfSalary() {
-        return fSalary;
+    public String getLocation() {
+        return location;
     }
 
-    public String getfDay() {
-        return fDay;
+    public String getSalary() {
+        return salary;
     }
 
-    public String getfLocation() {
-        return fLocation;
+    public String getSubject() {
+        return subject;
     }
 }

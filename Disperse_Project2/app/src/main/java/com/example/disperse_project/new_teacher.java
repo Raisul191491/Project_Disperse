@@ -46,10 +46,10 @@ public class new_teacher extends AppCompatActivity {
                 HashMap<String, String> userMap = new HashMap<>();
 
                 userMap.put("subject",subjects);
-                userMap.put("class",classes);
+                userMap.put("classes",classes);
                 userMap.put("salary",salaries);
                 userMap.put("days",days);
-                userMap.put("loaction",locations);
+                userMap.put("location",locations);
 
                 root.push().setValue(userMap);
 

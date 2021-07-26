@@ -19,9 +19,10 @@ import java.util.ArrayList;
 public class teacher_req extends AppCompatActivity {
 
     RecyclerView mRecyclerView;
-    DatabaseReference mDatabaseReference;
-    MyAdapter mMyAdapter;
-    ArrayList<reqs> list;
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference root = db.getReference().child("Users");
+    private MyAdapter adapter;
+    private  ArrayList<reqs> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,27 +30,30 @@ public class teacher_req extends AppCompatActivity {
         setContentView(R.layout.activity_teacher_req);
 
         mRecyclerView = findViewById(R.id.teacher_list);
-        mDatabaseReference = FirebaseDatabase.getInstance().getReference("Users");
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<>();
-        mMyAdapter = new MyAdapter(this,list);
-        mRecyclerView.setAdapter(mMyAdapter);
+        adapter = new MyAdapter(this, list);
 
-        mDatabaseReference.addValueEventListener(new ValueEventListener() {
+        mRecyclerView.setAdapter(adapter);
+
+        root.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull  DataSnapshot snapshot) {
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    reqs user = dataSnapshot.getValue(reqs.class);
-                    list.add(user);
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    reqs mreqs = dataSnapshot.getValue(reqs.class);
+                    list.add(mreqs);
                 }
 
-                mMyAdapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
         });
+
     }
 }

@@ -13,52 +13,51 @@ import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
+    ArrayList<reqs> mList;
     Context context;
 
-    ArrayList<reqs> list;
-
-    public MyAdapter(Context context, ArrayList<reqs> list) {
+    public MyAdapter(Context context, ArrayList<reqs> mList) {
+        this.mList = mList;
         this.context = context;
-        this.list = list;
     }
 
     @NonNull
-
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull  ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.teachers,parent, false);
-        return  new MyViewHolder(v);
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(context).inflate(R.layout.teachers, parent, false);
+        return new MyViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull  MyAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyAdapter.MyViewHolder holder, int position) {
+        reqs mreqs = mList.get(position);
 
-        reqs user = list.get(position);
-        holder.fSubject.setText(user.getfSubject());
-        holder.fClass.setText(user.getfClass());
-        holder.fSalary.setText(user.getfSalary());
-        holder.fLocation.setText(user.getfLocation());
-        holder.fDay.setText(user.getfDay());
-
+        holder.classes.setText(mreqs.getClasses());
+        holder.days.setText(mreqs.getDays());
+        holder.location.setText(mreqs.getLocation());
+        holder.salary.setText(mreqs.getSalary());
+        holder.subject.setText(mreqs.getSubject());
     }
 
     @Override
     public int getItemCount() {
-        return list.size();
+        return mList.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView fSubject, fClass, fSalary, fDay, fLocation;
+        TextView subject, classes, days, salary, location;
 
-        public MyViewHolder(@NonNull  View itemView) {
+        public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            fSubject = itemView.findViewById(R.id.subject);
-            fClass = itemView.findViewById(R.id.class_);
-            fSalary = itemView.findViewById(R.id.salary);
-            fDay = itemView.findViewById(R.id.day);
-            fLocation = itemView.findViewById(R.id.location);
+            classes = itemView.findViewById(R.id.class_name);
+            days = itemView.findViewById(R.id.day);
+            location = itemView.findViewById(R.id.location_name);
+            salary = itemView.findViewById(R.id.salary);
+            subject = itemView.findViewById(R.id.subject);
+
         }
     }
+
 }

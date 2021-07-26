@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="300dp"
+    android:layout_width="350dp"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     app:cardBackgroundColor="#84ACD6"
@@ -24,10 +24,10 @@
 
 
             <TextView
-                android:id="@+id/subject_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Subjects: "
+                android:layout_marginBottom="3dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold">
@@ -39,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:layout_marginBottom="3dp"
                 android:text="Raisul"
                 android:textColor="@color/black"
                 android:textSize="16sp">
@@ -56,10 +57,10 @@
 
 
             <TextView
-                android:id="@+id/class_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Class: "
+                android:layout_marginBottom="3dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold">
@@ -67,11 +68,12 @@
             </TextView>
 
             <TextView
-                android:id="@+id/class_"
+                android:id="@+id/class_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:text="9th"
+                android:layout_marginBottom="3dp"
+                android:text="9"
                 android:textColor="@color/black"
                 android:textSize="16sp">
 
@@ -92,6 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Salary: "
+                android:layout_marginBottom="3dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold">
@@ -103,6 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:layout_marginBottom="3dp"
                 android:text="5000"
                 android:textColor="@color/black"
                 android:textSize="16sp">
@@ -120,10 +124,10 @@
 
 
             <TextView
-                android:id="@+id/location_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Location: "
+                android:layout_marginBottom="3dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold">
@@ -131,11 +135,12 @@
             </TextView>
 
             <TextView
-                android:id="@+id/location"
+                android:id="@+id/location_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:text="Dhaka, Mirpur"
+                android:layout_marginBottom="3dp"
+                android:text="Dhaka"
                 android:textColor="@color/black"
                 android:textSize="16sp">
 
@@ -155,7 +160,8 @@
                 android:id="@+id/day_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Day/Week: "
+                android:text="Contact No.: "
+                android:layout_marginBottom="3dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold">
@@ -167,7 +173,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:text="3/4"
+                android:layout_marginBottom="3dp"
+                android:text="01854515112"
                 android:textColor="@color/black"
                 android:textSize="16sp">
 
@@ -175,6 +182,7 @@
 
 
         </LinearLayout>
+
 
     </LinearLayout>
 
