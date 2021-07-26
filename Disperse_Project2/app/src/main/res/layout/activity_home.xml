@@ -40,8 +40,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/teacher_request"
-        android:layout_width="277dp"
-        android:layout_height="95dp"
+        android:layout_width="wrap_content"
+        android:layout_height="106dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -49,7 +49,7 @@
         android:layout_marginStart="67dp"
         android:layout_marginTop="268dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginBottom="368dp"
+        android:layout_marginBottom="357dp"
         app:cardBackgroundColor="#DFE3E8"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
@@ -80,8 +80,9 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="279dp"
-        android:layout_height="94dp"
+        android:id="@+id/faq"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -89,7 +90,7 @@
         android:layout_marginStart="67dp"
         android:layout_marginTop="391dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="246dp"
+        android:layout_marginBottom="232dp"
         app:cardBackgroundColor="#DFE3E8"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
@@ -107,6 +108,7 @@
             app:srcCompat="@drawable/help" />
 
         <TextView
+            android:id="@+id/assistance"
             android:layout_width="98dp"
             android:layout_height="48dp"
             android:layout_gravity="center|left"
@@ -120,8 +122,9 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="277dp"
-        android:layout_height="92dp"
+        android:id="@+id/tution_search"
+        android:layout_width="wrap_content"
+        android:layout_height="103dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -129,7 +132,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="513dp"
         android:layout_marginEnd="66dp"
-        android:layout_marginBottom="126dp"
+        android:layout_marginBottom="115dp"
         app:cardBackgroundColor="#DFE3E8"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
@@ -147,16 +150,16 @@
             app:srcCompat="@drawable/search" />
 
         <TextView
-            android:layout_width="98dp"
-            android:layout_height="48dp"
+            android:layout_width="113dp"
+            android:layout_height="45dp"
             android:layout_gravity="center|left"
             android:layout_margin="40dp"
             android:fontFamily="@font/allerta_stencil"
+            android:onClick="setProfile"
             android:text="Tuition Search"
             android:textAlignment="center"
             android:textColor="#2962FF"
-            android:textSize="18dp"
-            android:onClick="setProfile"/>
+            android:textSize="18dp" />
 
     </androidx.cardview.widget.CardView>
 

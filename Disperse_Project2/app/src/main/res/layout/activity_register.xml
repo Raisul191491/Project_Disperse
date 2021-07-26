@@ -38,6 +38,7 @@
 
     <EditText
         android:id="@+id/Full_name"
+        android:padding="10dp"
         android:layout_width="344dp"
         android:layout_height="43dp"
         android:layout_marginStart="20dp"
