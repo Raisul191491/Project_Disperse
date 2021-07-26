@@ -39,6 +39,7 @@
         app:srcCompat="@drawable/logout_logo" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/teacher_request"
         android:layout_width="277dp"
         android:layout_height="95dp"
         android:layout_alignParentStart="true"
