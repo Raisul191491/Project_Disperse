@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Disperse_Project">
-        <activity android:name=".new_teacher"></activity>
+        <activity android:name=".MyRequests"></activity>
+        <activity android:name=".new_teacher" />
         <activity android:name=".teacher_req" />
         <activity android:name=".proflle_page" />
         <activity android:name=".login" />

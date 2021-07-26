@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -51,8 +52,7 @@ public class new_teacher extends AppCompatActivity {
                 userMap.put("days",days);
                 userMap.put("location",locations);
 
-                root.push().setValue(userMap);
-
+                root.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).push().setValue(userMap);
 
             }
         });

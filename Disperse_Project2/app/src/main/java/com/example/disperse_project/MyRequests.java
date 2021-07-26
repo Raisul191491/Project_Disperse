@@ -7,34 +7,35 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.auth.User;
 
 import java.util.ArrayList;
 
-public class teacher_req extends AppCompatActivity {
+public class MyRequests extends AppCompatActivity {
 
-    RecyclerView mRecyclerView;
+    private RecyclerView mRecyclerView;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
-    private DatabaseReference root = db.getReference().child("Users");
-    private MyAdapter adapter;
-    private  ArrayList<reqs> list;
+    private String UID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+    private DatabaseReference root = db.getReference().child("Users").child(UID);
+    private MyRequestAdapter adapter;
+    private  ArrayList<requests> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher_req);
+        setContentView(R.layout.activity_my_requests);
 
-        mRecyclerView = findViewById(R.id.teacher_list);
+        mRecyclerView = findViewById(R.id.teacher_list2);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<>();
-        adapter = new MyAdapter(this, list);
+        adapter = new MyRequestAdapter(this, list);
 
         mRecyclerView.setAdapter(adapter);
 
@@ -43,10 +44,8 @@ public class teacher_req extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 list.clear();
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
-                        reqs mreqs = dataSnapshot1.getValue(reqs.class);
+                        requests mreqs = dataSnapshot.getValue(requests.class);
                         list.add(mreqs);
-                    }
                 }
 
                 adapter.notifyDataSetChanged();

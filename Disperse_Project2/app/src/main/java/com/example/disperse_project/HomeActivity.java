@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class HomeActivity extends AppCompatActivity {
 
     ImageView profile;
-    CardView mTeacherRequest, mTuitionSearch;
+    CardView mTeacherRequest, mTuitionSearch, mMyRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,14 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),teacher_req.class));
+            }
+        });
+
+        mMyRequest = findViewById(R.id.personal_reqs);
+        mMyRequest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MyRequests.class));
             }
         });
 
