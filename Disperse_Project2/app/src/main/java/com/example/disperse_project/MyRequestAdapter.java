@@ -4,10 +4,14 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
@@ -38,6 +42,13 @@ public class MyRequestAdapter extends RecyclerView.Adapter<MyRequestAdapter.MyVi
         holder.location.setText(Requests.getLocation());
         holder.salary.setText(Requests.getSalary());
         holder.subject.setText(Requests.getSubject());
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String uuid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                FirebaseDatabase.getInstance().getReference("Users").child(uuid).removeValue();
+            }
+        });
     }
 
     @Override
@@ -48,6 +59,7 @@ public class MyRequestAdapter extends RecyclerView.Adapter<MyRequestAdapter.MyVi
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView subject, classes, days, salary, location;
+        ImageButton delete;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -57,6 +69,8 @@ public class MyRequestAdapter extends RecyclerView.Adapter<MyRequestAdapter.MyVi
             location = itemView.findViewById(R.id.location_name);
             salary = itemView.findViewById(R.id.salary);
             subject = itemView.findViewById(R.id.subject);
+            delete = itemView.findViewById(R.id.delete_button);
+
 
         }
     }

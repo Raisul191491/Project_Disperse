@@ -22,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
             }
         },Splash_Time);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }

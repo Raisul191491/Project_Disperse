@@ -18,6 +18,7 @@ public class new_teacher extends AppCompatActivity {
 
     private EditText mSubject, mClass, mSalary, mDay, mLocation;
     private Button mRequest;
+    private String key;
 
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("Users");
@@ -61,5 +62,6 @@ public class new_teacher extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+        finish();
     }
 }
